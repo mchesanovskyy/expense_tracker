@@ -88,6 +88,11 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Create</PrecompiledHeader>
+      <ForcedIncludeFiles>stdafx.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeaderOutputFile>
+      </PrecompiledHeaderOutputFile>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -140,6 +145,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="expense_tracker.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Common\Helpers\date_time_helpers.h" />
+    <ClInclude Include="Common\Helpers\hash_helper.h" />
+    <ClInclude Include="Common\Helpers\str_helpers.h" />
+    <ClInclude Include="Core\Entities\user.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Core\Entities\transaction.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
