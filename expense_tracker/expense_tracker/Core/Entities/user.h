@@ -1,7 +1,4 @@
 #pragma once
-#include <string>
-
-using namespace std;
 
 class User
 {
@@ -12,6 +9,4 @@ public:
 	string FirstName {};
 	string LastName {};
 };
-
-
 

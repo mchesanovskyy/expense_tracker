@@ -1,6 +1,7 @@
 #pragma once
 #include <string>
 #include <vector>
+#include <map>
 
 #include "./Common/Helpers/str_helpers.h"
 #include "./Common/Helpers/date_time_helpers.h"
