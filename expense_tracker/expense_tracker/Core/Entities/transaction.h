@@ -1,9 +1,9 @@
 #pragma once
+#include "EntityBase.h"
 
-class Transaction
+class Transaction : public EntityBase
 {
 public:
-	int Id = 0;
 	int UserId  = 0;
 	string Title {};
 	time_t Timestamp {};

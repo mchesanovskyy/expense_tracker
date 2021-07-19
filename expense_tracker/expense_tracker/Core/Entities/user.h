@@ -1,9 +1,9 @@
 #pragma once
+#include "EntityBase.h"
 
-class User
+class User : public EntityBase
 {
 public:
-	int Id = 0;
 	string Login {};
 	string PasswordHash {};
 	string FirstName {};
