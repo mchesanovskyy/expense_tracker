@@ -154,11 +154,16 @@
     <ClInclude Include="Common\Helpers\date_time_helpers.h" />
     <ClInclude Include="Common\Helpers\hash_helper.h" />
     <ClInclude Include="Common\Helpers\str_helpers.h" />
+    <ClInclude Include="Core\Entities\EntityBase.h" />
+    <ClInclude Include="Infrastructure\Consts\ConfigConsts.h" />
     <ClInclude Include="Core\Entities\user.h" />
     <ClInclude Include="Core\Interfaces\IUserService.h" />
     <ClInclude Include="Core\Models\SignUpUserModel.h" />
     <ClInclude Include="Core\Interfaces\Repositories\IUserRepository.h" />
     <ClInclude Include="Core\Exceptions\ExpenseTrackerException.h" />
+    <ClInclude Include="Infrastructure\Managers\ConfigManager.h" />
+    <ClInclude Include="Infrastructure\Providers\FileProvider.h" />
+    <ClInclude Include="Infrastructure\Repositories\File\FileRepositoryBase.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="Core\Entities\transaction.h" />
     <ClInclude Include="Core\Services\UserService.h" />
