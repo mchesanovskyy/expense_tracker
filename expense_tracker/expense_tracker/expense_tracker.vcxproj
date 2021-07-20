@@ -155,6 +155,7 @@
     <ClInclude Include="Common\Helpers\hash_helper.h" />
     <ClInclude Include="Common\Helpers\str_helpers.h" />
     <ClInclude Include="Core\Entities\EntityBase.h" />
+    <ClInclude Include="Infrastructure\Repositories\File\FileUserRepository.h" />
     <ClInclude Include="Infrastructure\Consts\ConfigConsts.h" />
     <ClInclude Include="Core\Entities\user.h" />
     <ClInclude Include="Core\Interfaces\IUserService.h" />

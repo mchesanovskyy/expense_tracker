@@ -74,5 +74,8 @@
     <ClInclude Include="Core\Entities\EntityBase.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Infrastructure\Repositories\File\FileUserRepository.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

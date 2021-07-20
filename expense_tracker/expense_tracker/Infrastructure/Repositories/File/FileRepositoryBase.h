@@ -16,7 +16,7 @@ protected:
 	}
 
 public:
-	virtual int Create(T& entity)
+	virtual int Add(T& entity)
 	{
 		entity.Id = _configManager.GetAutoincrementValue(_idConfigName);
 
@@ -52,6 +52,4 @@ public:
 		FileProvider<T>::SaveChanges(outRecords);
 		return true;
 	}
-
 };
-
