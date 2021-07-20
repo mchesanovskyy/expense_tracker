@@ -143,6 +143,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Core\Services\UserService.cpp" />
     <ClCompile Include="expense_tracker.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
@@ -154,8 +155,13 @@
     <ClInclude Include="Common\Helpers\hash_helper.h" />
     <ClInclude Include="Common\Helpers\str_helpers.h" />
     <ClInclude Include="Core\Entities\user.h" />
+    <ClInclude Include="Core\Interfaces\IUserService.h" />
+    <ClInclude Include="Core\Models\SignUpUserModel.h" />
+    <ClInclude Include="Core\Interfaces\Repositories\IUserRepository.h" />
+    <ClInclude Include="Core\Exceptions\ExpenseTrackerException.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="Core\Entities\transaction.h" />
+    <ClInclude Include="Core\Services\UserService.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
