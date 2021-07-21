@@ -150,10 +150,14 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ClientApps\Console\ICommand.h" />
     <ClInclude Include="Common\Helpers\date_time_helpers.h" />
     <ClInclude Include="Common\Helpers\hash_helper.h" />
     <ClInclude Include="Common\Helpers\str_helpers.h" />
+    <ClInclude Include="ClientApps\Console\ConsoleManager.h" />
     <ClInclude Include="Core\Entities\EntityBase.h" />
+    <ClInclude Include="ClientApps\Console\Commands\ExitCommand.h" />
+    <ClInclude Include="ClientApps\Console\Exceptions\ExitException.h" />
     <ClInclude Include="Infrastructure\Repositories\File\FileTransactionRepository.h" />
     <ClInclude Include="Infrastructure\Repositories\File\FileUserRepository.h" />
     <ClInclude Include="Infrastructure\Consts\Consts.h" />
@@ -170,7 +174,7 @@
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="Core\Entities\transaction.h" />
     <ClInclude Include="Core\Services\UserService.h" />
-    <ClInclude Include="UserServiceTests.h" />
+    <ClInclude Include="Tests\UserServiceTests.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

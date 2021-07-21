@@ -83,7 +83,19 @@
     <ClInclude Include="Core\Interfaces\ITransactionService.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="UserServiceTests.h">
+    <ClInclude Include="Tests\UserServiceTests.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientApps\Console\ConsoleManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientApps\Console\ICommand.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientApps\Console\Commands\ExitCommand.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientApps\Console\Exceptions\ExitException.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
