@@ -5,6 +5,7 @@
 class IUserService
 {
 public:
+	virtual ~IUserService() = default;
 	virtual User* SignUp(SignUpUserModel signUpModel) = 0;
 	virtual User* Login(string login, string password) = 0;
 };

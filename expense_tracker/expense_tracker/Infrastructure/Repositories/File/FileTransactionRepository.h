@@ -7,9 +7,15 @@ class FileTransactionRepository : public FileRepositoryBase<Transaction>, public
 {
 public:
 	FileTransactionRepository()
-		: FileRepositoryBase<Transaction>(fileNames::TRANSACTION_FILE_NAME, configs::TRANSACTION_ID_KEY)
+		: FileTransactionRepository(fileNames::TRANSACTION_FILE_NAME, configs::TRANSACTION_ID_KEY)
 	{
 
+	}
+	
+	FileTransactionRepository(const string& fileName, const string& idConfigName)
+		: FileRepositoryBase<Transaction>(fileName, idConfigName)
+	{
+		
 	}
 
 	int Add(Transaction& entity) override

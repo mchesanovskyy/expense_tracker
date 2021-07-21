@@ -170,6 +170,7 @@
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="Core\Entities\transaction.h" />
     <ClInclude Include="Core\Services\UserService.h" />
+    <ClInclude Include="UserServiceTests.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -83,5 +83,8 @@
     <ClInclude Include="Core\Interfaces\ITransactionService.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="UserServiceTests.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

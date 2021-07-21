@@ -7,9 +7,14 @@
 class FileUserRepository : public FileRepositoryBase<User>, public IUserRepository
 {
 public:
-	FileUserRepository() : FileRepositoryBase<User>(fileNames::USER_FILE_NAME, configs::USER_ID_KEY)
+	FileUserRepository() : FileUserRepository(fileNames::USER_FILE_NAME, configs::USER_ID_KEY)
 	{
 
+	}
+
+	FileUserRepository(const string& fileName, const string& idConfigName)
+		: FileRepositoryBase<User>(fileName, idConfigName)
+	{
 	}
 
 	virtual int Add(User& user) override
