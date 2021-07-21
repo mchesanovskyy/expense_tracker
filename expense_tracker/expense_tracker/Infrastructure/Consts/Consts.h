@@ -9,4 +9,5 @@ namespace configs
 namespace fileNames 
 {
 	static string USER_FILE_NAME = "users.txt";
+	static string TRANSACTION_FILE_NAME = "transactions.txt";
 }

@@ -1,3 +1,4 @@
+#pragma once
 #include "../../Managers/ConfigManager.h"
 #include "../../Providers/FileProvider.h"
 
@@ -27,7 +28,6 @@ public:
 
 	virtual T* GetById(int id)
 	{
-		auto i = 0;
 		for (auto* record : FileProvider<T>::GetRecords())
 		{
 			if (record->Id == id)

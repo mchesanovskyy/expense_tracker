@@ -143,7 +143,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Core\Services\UserService.cpp" />
     <ClCompile Include="expense_tracker.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
@@ -155,8 +154,9 @@
     <ClInclude Include="Common\Helpers\hash_helper.h" />
     <ClInclude Include="Common\Helpers\str_helpers.h" />
     <ClInclude Include="Core\Entities\EntityBase.h" />
+    <ClInclude Include="Infrastructure\Repositories\File\FileTransactionRepository.h" />
     <ClInclude Include="Infrastructure\Repositories\File\FileUserRepository.h" />
-    <ClInclude Include="Infrastructure\Consts\ConfigConsts.h" />
+    <ClInclude Include="Infrastructure\Consts\Consts.h" />
     <ClInclude Include="Core\Entities\user.h" />
     <ClInclude Include="Core\Interfaces\IUserService.h" />
     <ClInclude Include="Core\Models\SignUpUserModel.h" />
@@ -165,6 +165,8 @@
     <ClInclude Include="Infrastructure\Managers\ConfigManager.h" />
     <ClInclude Include="Infrastructure\Providers\FileProvider.h" />
     <ClInclude Include="Infrastructure\Repositories\File\FileRepositoryBase.h" />
+    <ClInclude Include="Core\Interfaces\Repositories\ITransactionRepository.h" />
+    <ClInclude Include="Core\Interfaces\ITransactionService.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="Core\Entities\transaction.h" />
     <ClInclude Include="Core\Services\UserService.h" />
