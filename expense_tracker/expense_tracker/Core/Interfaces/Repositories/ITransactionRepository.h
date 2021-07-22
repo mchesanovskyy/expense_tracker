@@ -1,11 +1,10 @@
 #pragma once
+#include "IRepository.h"
 #include "../../Entities/transaction.h"
 
-class ITransactionRepository
+class ITransactionRepository : public virtual IRepository<Transaction>
 {
 public:
 	virtual ~ITransactionRepository() = default;
-	virtual int Add(Transaction& entity) = 0;
-	virtual Transaction* GetById(int id) = 0;
 	virtual vector<Transaction*> GetUserTransactions(int userId) = 0;
 };

@@ -10,7 +10,7 @@ public:
 		return "exit";
 	}
 
-	void Process() override
+	void Process(UserSession& session) override
 	{
 		throw ExitException();
 	}

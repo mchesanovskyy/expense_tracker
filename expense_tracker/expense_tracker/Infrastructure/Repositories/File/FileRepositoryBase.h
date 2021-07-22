@@ -1,9 +1,10 @@
 #pragma once
 #include "../../Managers/ConfigManager.h"
 #include "../../Providers/FileProvider.h"
+#include "../../../Core/Interfaces/Repositories/IRepository.h"
 
 template<class T>
-class FileRepositoryBase : protected FileProvider<T>
+class FileRepositoryBase : protected FileProvider<T>, public virtual IRepository<T>
 {
 	string _idConfigName;
 protected:
@@ -17,7 +18,7 @@ protected:
 	}
 
 public:
-	virtual int Add(T& entity)
+	virtual int Add(T& entity) override
 	{
 		entity.Id = _configManager.GetAutoincrementValue(_idConfigName);
 
@@ -26,7 +27,7 @@ public:
 		return entity.Id;
 	}
 
-	virtual T* GetById(int id)
+	virtual T* GetById(int id) override
 	{
 		for (auto* record : FileProvider<T>::GetRecords())
 		{

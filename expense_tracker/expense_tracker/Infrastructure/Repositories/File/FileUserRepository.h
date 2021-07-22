@@ -4,7 +4,8 @@
 #include "../../../Core/Entities/user.h"
 #include "../../../Core/Interfaces/Repositories/IUserRepository.h"
 
-class FileUserRepository : public FileRepositoryBase<User>, public IUserRepository
+class FileUserRepository : public FileRepositoryBase<User>,
+	public IUserRepository
 {
 public:
 	FileUserRepository() : FileUserRepository(fileNames::USER_FILE_NAME, configs::USER_ID_KEY)
@@ -15,11 +16,6 @@ public:
 	FileUserRepository(const string& fileName, const string& idConfigName)
 		: FileRepositoryBase<User>(fileName, idConfigName)
 	{
-	}
-
-	virtual int Add(User& user) override
-	{
-		return FileRepositoryBase<User>::Add(user);
 	}
 
 	virtual User* GetByLogin(string login) override 
@@ -33,10 +29,6 @@ public:
 			}
 		}
 		return nullptr;
-	}
-
-	virtual User* GetById(int id) override {
-		return FileRepositoryBase<User>::GetById(id);
 	}
 
 protected:

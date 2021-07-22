@@ -1,12 +1,12 @@
 #pragma once
+#include "IRepository.h"
 #include "../../Entities/user.h"
 
-class IUserRepository
+class IUserRepository : public virtual IRepository<User>
 {
 public:
 	virtual ~IUserRepository() = default;
-	virtual int Add(User& user) = 0;
+
 	virtual User* GetByLogin(string login) = 0;
-	virtual User* GetById(int id) = 0;
 };
 

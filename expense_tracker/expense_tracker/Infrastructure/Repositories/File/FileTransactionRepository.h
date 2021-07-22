@@ -30,7 +30,16 @@ public:
 	
 	vector<Transaction*> GetUserTransactions(int userId) override
 	{
-		return GetRecords();
+		vector<Transaction*> transactions;
+		for(auto* record : GetRecords())
+		{
+			if(record->UserId == userId)
+			{
+				transactions.push_back(record);
+			}
+		}
+		
+		return transactions;
 	}
 
 protected:
