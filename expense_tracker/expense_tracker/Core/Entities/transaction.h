@@ -19,5 +19,10 @@ public:
 		Timestamp = timestamp;
 		Amount = amount;
 	}
+
+	bool IsProfit()
+	{
+		return Amount >= 0;
+	}
 };
 

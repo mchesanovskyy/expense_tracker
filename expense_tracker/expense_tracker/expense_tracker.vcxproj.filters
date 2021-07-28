@@ -110,10 +110,10 @@
     <ClInclude Include="ClientApps\Console\Commands\SignUpCommand.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="ClientApps\Console\ServicesContainer.h">
+    <ClInclude Include="ClientApps\Console\Containers\CoreContainer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="ClientApps\Console\UserDisplayHelper.h">
+    <ClInclude Include="ClientApps\Console\Helpers\UserDisplayHelper.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="ClientApps\Console\Commands\LoginCommand.h">
@@ -126,6 +126,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="ClientApps\Console\Commands\ExpenseCommand.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientApps\Console\Helpers\TransactionDisplayHelper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientApps\Console\Helpers\CoutHelper.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

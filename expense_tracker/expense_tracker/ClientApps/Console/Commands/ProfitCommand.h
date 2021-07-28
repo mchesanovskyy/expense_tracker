@@ -2,7 +2,8 @@
 #include <iostream>
 
 #include "../ICommand.h"
-#include "../ServicesContainer.h"
+#include "../Containers/CoreContainer.h"
+#include "../Helpers/TransactionDisplayHelper.h"
 
 class ProfitCommand : public virtual IAuthorizedCommand
 {
@@ -35,10 +36,7 @@ public:
 
 		cin.ignore();
 		
-		auto trans = _transactionService.Add(session.GetUserId(), model);
-
-		cout << "ID:" << trans->Id << endl;
-		cout << "Title:" << trans->Title << endl;
-		cout << "Amount:" << trans->Amount << endl;
+		auto* trans = _transactionService.Add(session.GetUserId(), model);
+		TransactionDisplayHelper::OutputTransaction(*trans);
 	}
 };

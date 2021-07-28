@@ -2,7 +2,8 @@
 #include <iostream>
 
 #include "../ICommand.h"
-#include "../ServicesContainer.h"
+#include "../Containers/CoreContainer.h"
+#include "../Helpers/UserDisplayHelper.h"
 
 class SignUpCommand : public virtual ICommand
 {

@@ -7,12 +7,14 @@
 
 int main()
 {
-	ConsoleManager manager;
+	/*ConsoleManager manager;
 	manager.Start();
-	
+	*/
 	/*UserServiceTests serviceTests;
 	serviceTests.Run();*/
 
-	//ITransactionRepository* repo = new FileTransactionRepository;
-	//ITransactionService* service = new TransactionService(*repo);
+	ITransactionRepository* repo = new FileTransactionRepository;
+	ITransactionService* service = new TransactionService(*repo);
+	auto trans = service->GetUserTransactions(1);
+	TransactionDisplayHelper::OutputTransactions(trans);
 }

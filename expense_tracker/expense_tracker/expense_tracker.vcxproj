@@ -160,6 +160,7 @@
     <ClInclude Include="ClientApps\Console\Exceptions\ExitException.h" />
     <ClInclude Include="Core\Models\TransactionModelIn.h" />
     <ClInclude Include="ClientApps\Console\Commands\ExpenseCommand.h" />
+    <ClInclude Include="ClientApps\Console\Helpers\CoutHelper.h" />
     <ClInclude Include="Infrastructure\Repositories\File\FileTransactionRepository.h" />
     <ClInclude Include="Infrastructure\Repositories\File\FileUserRepository.h" />
     <ClInclude Include="Infrastructure\Consts\Consts.h" />
@@ -175,7 +176,7 @@
     <ClInclude Include="Core\Interfaces\ITransactionService.h" />
     <ClInclude Include="Core\Interfaces\Repositories\IRepository.h" />
     <ClInclude Include="ClientApps\Console\Commands\SignUpCommand.h" />
-    <ClInclude Include="ClientApps\Console\ServicesContainer.h" />
+    <ClInclude Include="ClientApps\Console\Containers\CoreContainer.h" />
     <ClInclude Include="ClientApps\Console\Commands\LoginCommand.h" />
     <ClInclude Include="ClientApps\Console\Commands\ProfitCommand.h" />
     <ClInclude Include="stdafx.h" />
@@ -183,8 +184,9 @@
     <ClInclude Include="Core\Services\UserService.h" />
     <ClInclude Include="Tests\UserServiceTests.h" />
     <ClInclude Include="Core\Services\TransactionService.h" />
-    <ClInclude Include="ClientApps\Console\UserDisplayHelper.h" />
+    <ClInclude Include="ClientApps\Console\Helpers\UserDisplayHelper.h" />
     <ClInclude Include="ClientApps\Console\UserSession.h" />
+    <ClInclude Include="ClientApps\Console\Helpers\TransactionDisplayHelper.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
