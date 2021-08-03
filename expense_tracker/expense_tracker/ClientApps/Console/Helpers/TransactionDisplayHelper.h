@@ -35,15 +35,14 @@ public:
 		{
 			WriteHeader(TransactionHeader);
 		}
-		 d = put_money(transaction.Amount, false);
-		
+
 		const int nameLen = 10;
 		cout << endl;
 		WriteParameter("Type", transaction.IsProfit() ? "PROFIT" : "EXPENSE", nameLen);
 		WriteParameter("Id", transaction.Id, nameLen);
 		WriteParameter("Title", transaction.Title, nameLen);
 		WriteParameter("Timestamp", to_date_time_str(transaction.Timestamp), nameLen);
-		WriteParameter("Amount", put_money(transaction.Amount, false), nameLen);
+		WriteParameter("Amount", transaction.Amount, nameLen);
 	}
 };
 

@@ -1,6 +1,7 @@
 #include "stdafx.h"
 
 #include "ClientApps/Console/ConsoleManager.h"
+#include "ClientApps/Telegram/TgBotManager.h"
 #include "Core/Services/TransactionService.h"
 #include "Infrastructure/Repositories/File/FileTransactionRepository.h"
 #include "Tests/UserServiceTests.h"
@@ -13,8 +14,6 @@ int main()
 	/*UserServiceTests serviceTests;
 	serviceTests.Run();*/
 
-	ITransactionRepository* repo = new FileTransactionRepository;
-	ITransactionService* service = new TransactionService(*repo);
-	auto trans = service->GetUserTransactions(1);
-	TransactionDisplayHelper::OutputTransactions(trans);
+	TgBotManager manager;
+	manager.Start();
 }

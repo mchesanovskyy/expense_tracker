@@ -1,5 +1,5 @@
 #pragma once
-#include "Core/Entities/user.h"
+#include "../../Core/Entities/user.h"
 
 class UserSession
 {

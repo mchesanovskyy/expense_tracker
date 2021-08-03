@@ -187,6 +187,10 @@
     <ClInclude Include="ClientApps\Console\Helpers\UserDisplayHelper.h" />
     <ClInclude Include="ClientApps\Console\UserSession.h" />
     <ClInclude Include="ClientApps\Console\Helpers\TransactionDisplayHelper.h" />
+    <ClInclude Include="ClientApps\Telegram\TgUserSession.h" />
+    <ClInclude Include="ClientApps\Telegram\TgBotManager.h" />
+    <ClInclude Include="ClientApps\Telegram\TgPingCommand.h" />
+    <ClInclude Include="ClientApps\Telegram\TgBotCommand.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

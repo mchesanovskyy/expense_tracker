@@ -134,5 +134,17 @@
     <ClInclude Include="ClientApps\Console\Helpers\CoutHelper.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="ClientApps\Telegram\TgUserSession.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientApps\Telegram\TgBotManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientApps\Telegram\TgPingCommand.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientApps\Telegram\TgBotCommand.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
