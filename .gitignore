@@ -349,3 +349,5 @@ MigrationBackup/
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
 /expense_tracker/expense_tracker/app.config
+/expense_tracker/expense_tracker/transactions.txt
+/expense_tracker/expense_tracker/users.txt

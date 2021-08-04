@@ -2,7 +2,7 @@
 #include <iostream>
 
 #include "../ICommand.h"
-#include "../Containers/CoreContainer.h"
+#include "../../Core/CoreContainer.h"
 #include "../Helpers/TransactionDisplayHelper.h"
 
 class ProfitCommand : public virtual IAuthorizedCommand

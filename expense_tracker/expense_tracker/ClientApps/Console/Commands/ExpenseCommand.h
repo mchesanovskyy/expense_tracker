@@ -1,6 +1,6 @@
 #pragma once
 #include "../ICommand.h"
-#include "../Containers/CoreContainer.h"
+#include "../../Core/CoreContainer.h"
 #include "../Helpers/TransactionDisplayHelper.h"
 
 class ExpenseCommand : public virtual IAuthorizedCommand

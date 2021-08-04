@@ -151,6 +151,12 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ClientApps\Console\ICommand.h" />
+    <ClInclude Include="ClientApps\Telegram\Commands\TgBotAuthorizedCommandBase.h" />
+    <ClInclude Include="ClientApps\Telegram\Commands\TgCommands.h" />
+    <ClInclude Include="ClientApps\Telegram\Commands\Transaction\TgProfitTransactionCommand.h" />
+    <ClInclude Include="ClientApps\Telegram\Commands\Transaction\TgUserTransactionsCommand.h" />
+    <ClInclude Include="Core\CoreContainer.h" />
+    <ClInclude Include="ClientApps\Telegram\Commands\User\TgLoginCommand.h" />
     <ClInclude Include="Common\Helpers\date_time_helpers.h" />
     <ClInclude Include="Common\Helpers\hash_helper.h" />
     <ClInclude Include="Common\Helpers\str_helpers.h" />
@@ -176,7 +182,6 @@
     <ClInclude Include="Core\Interfaces\ITransactionService.h" />
     <ClInclude Include="Core\Interfaces\Repositories\IRepository.h" />
     <ClInclude Include="ClientApps\Console\Commands\SignUpCommand.h" />
-    <ClInclude Include="ClientApps\Console\Containers\CoreContainer.h" />
     <ClInclude Include="ClientApps\Console\Commands\LoginCommand.h" />
     <ClInclude Include="ClientApps\Console\Commands\ProfitCommand.h" />
     <ClInclude Include="stdafx.h" />
@@ -189,8 +194,8 @@
     <ClInclude Include="ClientApps\Console\Helpers\TransactionDisplayHelper.h" />
     <ClInclude Include="ClientApps\Telegram\TgUserSession.h" />
     <ClInclude Include="ClientApps\Telegram\TgBotManager.h" />
-    <ClInclude Include="ClientApps\Telegram\TgPingCommand.h" />
-    <ClInclude Include="ClientApps\Telegram\TgBotCommand.h" />
+    <ClInclude Include="ClientApps\Telegram\Commands\Basic\TgPingCommand.h" />
+    <ClInclude Include="ClientApps\Telegram\Commands\ITgBotCommand.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

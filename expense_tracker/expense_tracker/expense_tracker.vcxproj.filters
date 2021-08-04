@@ -110,9 +110,6 @@
     <ClInclude Include="ClientApps\Console\Commands\SignUpCommand.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="ClientApps\Console\Containers\CoreContainer.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="ClientApps\Console\Helpers\UserDisplayHelper.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -140,10 +137,28 @@
     <ClInclude Include="ClientApps\Telegram\TgBotManager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="ClientApps\Telegram\TgPingCommand.h">
+    <ClInclude Include="ClientApps\Telegram\Commands\Basic\TgPingCommand.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="ClientApps\Telegram\TgBotCommand.h">
+    <ClInclude Include="ClientApps\Telegram\Commands\ITgBotCommand.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientApps\Telegram\Commands\User\TgLoginCommand.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\CoreContainer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientApps\Telegram\Commands\Transaction\TgUserTransactionsCommand.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientApps\Telegram\Commands\Transaction\TgProfitTransactionCommand.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientApps\Telegram\Commands\TgCommands.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientApps\Telegram\Commands\TgBotAuthorizedCommandBase.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

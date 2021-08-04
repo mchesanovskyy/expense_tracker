@@ -1,11 +1,9 @@
 #pragma once
-#include "TgBotCommand.h"
-#include "TgPingCommand.h"
 #include "TgUserSession.h"
+#include "Commands/TgCommands.h"
+
 #include "../../Core/Services/TransactionService.h"
 #include "../../Core/Services/UserService.h"
-#include "../../Infrastructure/Repositories/File/FileTransactionRepository.h"
-#include "../../Infrastructure/Repositories/File/FileUserRepository.h"
 
 #include "tgbot/tgbot.h"
 
@@ -13,8 +11,7 @@ class TgBotManager
 {
 	TgBot::Bot* _bot;
 	map<int64_t, TgUserSession*> _sessions;
-	vector<TgBotCommand*> _cmds;
-
+	vector<ITgBotCommand*> _cmds;
 
 	ITransactionRepository* _transactionRepository = nullptr;
 	IUserRepository* _userRepository = nullptr;
@@ -25,6 +22,7 @@ public:
 	TgBotManager()
 	{
 		InitDependencies();
+		InitializeCommands();
 	}
 
 	void Start()
@@ -35,7 +33,7 @@ public:
 			const string apiKey = config.GetSetting(configs::BOT_APPID_KEY);
 			_bot = new TgBot::Bot(apiKey);
 
-			InitializeCommands();
+			InitializeBot();
 
 			printf("Bot username: %s\n",
 				_bot->getApi().getMe()->username.c_str());
@@ -73,12 +71,16 @@ private:
 
 	void InitializeCommands()
 	{
-		TgBot::Bot& bot = *_bot;
 		_cmds.push_back(new TgPingCommand());
 		_cmds.push_back(new TgLoginCommand(*_userService));
 		_cmds.push_back(new TgUserTransactionsCommand(*_transactionService));
-		_cmds.push_back(new TgProfitTransactionsCommand(*_transactionService));
-
+		_cmds.push_back(new TgProfitTransactionCommand(*_transactionService));
+	}
+	
+	void InitializeBot()
+	{
+		TgBot::Bot& bot = *_bot;
+		
 		bot.getEvents().onCommand("start",
 			[&bot, this](TgBot::Message::Ptr message)
 			{
