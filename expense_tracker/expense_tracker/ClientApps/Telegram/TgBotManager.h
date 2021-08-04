@@ -4,6 +4,9 @@
 
 #include "../../Core/Services/TransactionService.h"
 #include "../../Core/Services/UserService.h"
+#include "../../Infrastructure/Managers/ConfigManager.h"
+#include "../../Infrastructure/Repositories/File/FileTransactionRepository.h"
+#include "../../Infrastructure/Repositories/File/FileUserRepository.h"
 
 #include "tgbot/tgbot.h"
 
