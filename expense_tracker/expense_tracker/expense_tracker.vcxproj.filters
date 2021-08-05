@@ -161,5 +161,8 @@
     <ClInclude Include="ClientApps\Telegram\Commands\TgBotAuthorizedCommandBase.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Infrastructure\Repositories\SQL\ExpenseTrackerSqliteContext.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

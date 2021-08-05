@@ -16,4 +16,9 @@ int main()
 
 	TgBotManager manager;
 	manager.Start();
+
+
+
+
+
 }

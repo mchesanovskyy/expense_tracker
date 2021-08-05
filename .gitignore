@@ -351,3 +351,4 @@ MigrationBackup/
 /expense_tracker/expense_tracker/app.config
 /expense_tracker/expense_tracker/transactions.txt
 /expense_tracker/expense_tracker/users.txt
+/expense_tracker/expense_tracker/db.sqlite

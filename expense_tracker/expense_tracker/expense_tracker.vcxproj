@@ -92,6 +92,7 @@
       <ForcedIncludeFiles>$(ProjectDir)/stdafx.h</ForcedIncludeFiles>
       <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
       <LanguageStandard>stdcpp17</LanguageStandard>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -184,6 +185,7 @@
     <ClInclude Include="ClientApps\Console\Commands\SignUpCommand.h" />
     <ClInclude Include="ClientApps\Console\Commands\LoginCommand.h" />
     <ClInclude Include="ClientApps\Console\Commands\ProfitCommand.h" />
+    <ClInclude Include="Infrastructure\Repositories\SQL\ExpenseTrackerSqliteContext.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="Core\Entities\transaction.h" />
     <ClInclude Include="Core\Services\UserService.h" />

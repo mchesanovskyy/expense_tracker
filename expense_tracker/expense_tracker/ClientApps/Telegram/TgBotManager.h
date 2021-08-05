@@ -7,6 +7,7 @@
 #include "../../Infrastructure/Managers/ConfigManager.h"
 #include "../../Infrastructure/Repositories/File/FileTransactionRepository.h"
 #include "../../Infrastructure/Repositories/File/FileUserRepository.h"
+#include "../../Infrastructure/Repositories/SQL/ExpenseTrackerSqliteContext.h"
 
 #include "tgbot/tgbot.h"
 
@@ -68,8 +69,14 @@ private:
 	{
 		_transactionRepository = new FileTransactionRepository;
 		_userRepository = new FileUserRepository;
-		_userService = new UserService(*_userRepository);
-		_transactionService = new TransactionService(*_transactionRepository);
+
+		//TODO: add Delete statements
+		auto sqlContext = new ExpenseTrackerSqliteContext();
+		auto sqlUserRepository = new SqliteUserRepository(*sqlContext);
+		auto sqlTransactionRepository = new SqliteTransactionRepository(*sqlContext);
+		
+		_userService = new UserService(*sqlUserRepository);
+		_transactionService = new TransactionService(*sqlTransactionRepository);
 	}
 
 	void InitializeCommands()
